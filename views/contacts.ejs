@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+</head>
+<body>
+    <%- include('blocks/header') -%>
+    
+    <div class="container" style="margin-top:50px">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Контакты</h1>
+                <form action="/contacts" method="post">
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="Email">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Имя</label>
+                            <input type="text" name="name" class="form-control" placeholder="Имя">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputAddress">Сообщение</label>
+                        <textarea name="message" rows="8" class="form-control" cols="80"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Город</label>
+                          <input type="text" name="city" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" name="check" type="checkbox"> Я со всем согласен
+                          </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+                <% if(again) { %>
+                    <p class="text-danger">Не все поля заполнены!</p>
+                <% } %>
+            </div>
+            <%- include('blocks/aside') -%>
+        </div>
+    </div>
+
+    <%- include('blocks/footer') -%>
+</body>
+</html>

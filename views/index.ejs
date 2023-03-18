@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+</head>
+<body>
+    <%- include('blocks/header') -%>
+    
+    <div class="container" style="margin-top:50px">
+        <div class="row">
+            <div class="col-md-8">
+
+                <div>
+                    <img src="/public/img/computer.jpg" class="img-thumbnail" alt="Компьютер">
+                    <h2>Статья про компьютеры</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est unde minus quaerat modi illo rem nisi sint natus suscipit adipisci veniam eligendi debitis quisquam alias, ab, voluptas temporibus cupiditate facilis.</p>
+                </div>
+
+                <div>
+                    <img src="/public/img/facebook.jpg" class="img-thumbnail" alt="Компьютер">
+                    <h2>Статья про Facebook</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est unde minus quaerat modi illo rem nisi sint natus suscipit adipisci veniam eligendi debitis quisquam alias, ab, voluptas temporibus cupiditate facilis.</p>
+                </div>
+
+                <div>
+                    <img src="/public/img/mars.jpg" class="img-thumbnail" alt="Компьютер">
+                    <h2>Статья про Марс</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est unde minus quaerat modi illo rem nisi sint natus suscipit adipisci veniam eligendi debitis quisquam alias, ab, voluptas temporibus cupiditate facilis.</p>
+                </div>
+
+            </div>
+            <%- include('blocks/aside') -%>
+        </div>
+    </div>
+
+
+    <%- include('blocks/footer') -%>
+</body>
+</html>
